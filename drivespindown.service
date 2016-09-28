@@ -1,0 +1,10 @@
+[Unit]
+Description=Set drive standby parameters
+After=mnt.mount
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/hdparm -S 24 /dev/sda2
+
+[Install]
+WantedBy=basic.target
