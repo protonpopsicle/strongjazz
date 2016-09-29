@@ -1,7 +1,5 @@
 # Strong Jazz
 
-Download Pi Finder application from [here](http://ivanx.com/raspberrypi/).
-
 Connect drive to power and Raspberry Pi USB port.
 
 ```
@@ -34,3 +32,6 @@ $ scp drivespindown.service pi@raspberrypi.local:/etc/systemd/system/
 $ sudo systemctl daemon-reload
 $ sudo systemctl enable drivespindown.service
 ```
+
+Useful links:
+Pi Finder application from [here](http://ivanx.com/raspberrypi/).
