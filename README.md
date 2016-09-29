@@ -13,7 +13,7 @@ Add line to `/etc/fstab`:
 /dev/sda2 /mnt ntfs defaults,nofail,x-systemd.device-timeout=10 0 0
 ```
 
-Note: With this x-systemd.device-timeout setting, systemd will wait 10 seconds for device to mount--if its not plugged in this will cause boot to be 10 seconds slower.
+Note: This `x-systemd.device-timeout` setting causes systemd to wait 10 seconds for mounting to succeed or fail--if the drive is not plugged in this will cause boot to take 10 seconds longer.
 
 Add section to `/etc/samba/smb.conf`:
 ```
