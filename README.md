@@ -1,5 +1,7 @@
 # Strong Jazz
 
+Raspbian GNU/Linux 8 (jessie)
+
 Connect drive to power and Raspberry Pi USB port.
 
 ```
