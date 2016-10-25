@@ -4,7 +4,7 @@ After=mnt.mount
 
 [Service]
 Type=oneshot
-ExecStart=/sbin/hdparm -S 24 /dev/sda2
+ExecStart=/sbin/hdparm -S 24 /dev/disk/by-uuid/<your-drive-uuid>
 
 [Install]
 WantedBy=basic.target
