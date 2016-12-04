@@ -1,6 +1,6 @@
 # Strong Jazz
 
-Raspbian GNU/Linux 8 (jessie)
+OS: Raspbian Jessie Lite
 
 Connect drive to power and Raspberry Pi USB port.
 
@@ -24,7 +24,18 @@ read only = no
 guest ok = yes
 ```
 
-Enable energy saving spindown after inactivity (24*5=120 seconds)
+## Enable energy saving spindown after inactivity
+
+Edit the UUID in drivespindown.sh to match your drive's.
+
+(12*5=60 seconds)
+
+```bash
+$ mv drivespindown.sh /usr/local/bin/
+$ mv spindown.service /etc/systemd/system/
+$ sudo systemctl enable spindown.service
+$ sudo reboot
+```
 
 Useful links:
 Pi Finder application from [here](http://ivanx.com/raspberrypi/).

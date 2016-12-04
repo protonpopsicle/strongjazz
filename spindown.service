@@ -1,0 +1,9 @@
+[Unit]
+Description=schedule drive sleep
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/drivespindown.sh
+
+[Install]
+WantedBy=multi-user.target
